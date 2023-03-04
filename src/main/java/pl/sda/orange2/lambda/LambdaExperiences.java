@@ -41,7 +41,11 @@ public class LambdaExperiences {
         System.out.println("Coffee brewing...");
         return "my coffee";
         };
+        String myCoffe = myCoffeMaker3.prepare(5,"Small coffee");
+        System.out.println("My coffe is ready");
         CoffeMaker shortVersion = ((water, coffeeType) -> "my coffee");
         shortVersion.prepare(5,"Large Java Coffe");
+
+
     }
 }
