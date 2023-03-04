@@ -29,5 +29,18 @@ public class LambdaExperiences {
           System.out.println("One");
           System.out.println("Two");
       };
+
+        System.out.println("-----------------------------");
+        System.out.println("Coffe time");
+
+        CoffeMaker myCoffeMaker = (int water, String coffeeType) -> "my coffee";
+        CoffeMaker myCoffeMaker2 = (int water, String coffeeType) -> {
+        return "my coffee";
+        };
+        CoffeMaker myCoffeMaker3 = (int water, String coffeeType) -> {
+        System.out.println("Coffee brewing...");
+        return "my coffee";
+        };
+        CoffeMaker shortVersion = ((water, coffeeType) -> "my coffee");
     }
 }
