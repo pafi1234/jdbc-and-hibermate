@@ -18,5 +18,16 @@ public class LambdaExperiences {
           }
       };
       anonymousClassReference.silnoreki();
+
+        // () parenthesis - arguments list
+        // -> arguments, body separator
+        // {} parenthesis - method body
+      BoysDontCry firstLambda = () -> {};
+      BoysDontCry secondLambda = () -> System.out.println("Lambda");
+      secondLambda.silnoreki();
+      BoysDontCry thirdLambda = () -> {
+          System.out.println("One");
+          System.out.println("Two");
+      };
     }
 }
