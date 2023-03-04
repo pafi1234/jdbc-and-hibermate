@@ -42,5 +42,6 @@ public class LambdaExperiences {
         return "my coffee";
         };
         CoffeMaker shortVersion = ((water, coffeeType) -> "my coffee");
+        shortVersion.prepare(5,"Large Java Coffe");
     }
 }
