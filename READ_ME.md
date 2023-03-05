@@ -8,5 +8,4 @@
 - fast-forward
 - with merge commit
 
-### Marge types
-- fast-forward
+??? Kgvdkugvsb
