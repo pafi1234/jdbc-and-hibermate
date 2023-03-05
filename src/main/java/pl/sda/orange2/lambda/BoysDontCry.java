@@ -4,5 +4,7 @@ package pl.sda.orange2.lambda;
 @FunctionalInterface //ochrona przed błędami ludzkimi
 public interface BoysDontCry {
     void silnoreki();
-    default void cry() {};
+
+    default void cry() {
+    }
 }
