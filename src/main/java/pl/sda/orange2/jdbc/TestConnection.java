@@ -14,7 +14,7 @@ public class TestConnection {
                 FROM TEST
                 """;
 
-        Statement queryStatement = null;
+        ResultSet queryResult = null;
         try {
 //            Connection h2Connection = DriverManager.getConnection(H2Config.DB_URL,
 //                    H2Config.USER,
@@ -27,11 +27,11 @@ public class TestConnection {
             System.out.println("got connection: " + (h2Connection != null));
 
             // Statement is used to send queries to db with existing connection
-            queryStatement = h2Connection.createStatement();
+            Statement queryStatement = h2Connection.createStatement();
 
             // ResultSet contains query result data as simple table
             // we need to iterate over result to got data
-            ResultSet queryResult = queryStatement.executeQuery(query);
+            queryResult = queryStatement.executeQuery(query);
             while (queryResult.next()) {
                 System.out.println("id: " + queryResult.getInt(1));
                 System.out.println("name: " + queryResult.getString(2));
@@ -40,10 +40,10 @@ public class TestConnection {
             System.out.println("got exception: " + exc);
             exc.printStackTrace();
         } finally {
-            System.out.println("Finnaly I know it");
-            if (queryStatement != null) {
+            System.out.println("Finally I know it :)");
+            if (queryResult != null) {
                 try {
-                    queryStatement.close();
+                    queryResult.close();
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
