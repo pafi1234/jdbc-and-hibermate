@@ -8,15 +8,15 @@ public class OldStyleCar {
     private final String brand;
     private final String model;
 
+    public Long getId() {
+        return id;
+    }
+
     public OldStyleCar(Long id, String colour, String brand, String model) {
         this.id = id;
         this.colour = colour;
         this.brand = brand;
         this.model = model;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getColour() {
@@ -45,12 +45,12 @@ public class OldStyleCar {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        OldStyleCar car = (OldStyleCar) o;
-        return getId().equals(car.getId()) && getColour().equals(car.getColour()) && getBrand().equals(car.getBrand()) && getModel().equals(car.getModel());
+        OldStyleCar oldStyleCar = (OldStyleCar) o;
+        return Objects.equals(id, oldStyleCar.id) && Objects.equals(colour, oldStyleCar.colour) && Objects.equals(brand, oldStyleCar.brand) && Objects.equals(model, oldStyleCar.model);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getColour(), getBrand(), getModel());
+        return Objects.hash(id, colour, brand, model);
     }
 }
