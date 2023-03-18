@@ -2,3 +2,49 @@ Fatal message logged
 Error message logged
 Info message logged
 Warning message logged
+HHH000412: Hibernate ORM core version 6.1.7.Final
+HHH000412: Hibernate ORM core version 6.1.7.Final
+HHH000412: Hibernate ORM core version 6.1.7.Final
+HHH10001002: Using built-in connection pool (not intended for production use)
+HHH10001005: Loaded JDBC driver class: org.h2.Driver
+HHH10001012: Connecting with JDBC URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false]
+HHH10001001: Connection properties: {password=****, user=sa}
+HHH10001003: Autocommit mode: false
+HHH10001115: Connection pool size: 1 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@173f1614] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5489b1f7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+HHH000412: Hibernate ORM core version 6.1.7.Final
+HHH10001002: Using built-in connection pool (not intended for production use)
+HHH10001005: Loaded JDBC driver class: org.h2.Driver
+HHH10001012: Connecting with JDBC URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false]
+HHH10001001: Connection properties: {password=****, user=sa}
+HHH10001003: Autocommit mode: false
+HHH10001115: Connection pool size: 1 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@158e9f6e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48a2db72] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+HHH000412: Hibernate ORM core version 6.1.7.Final
+HHH10001002: Using built-in connection pool (not intended for production use)
+HHH10001005: Loaded JDBC driver class: org.h2.Driver
+HHH10001012: Connecting with JDBC URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false]
+HHH10001001: Connection properties: {password=****, user=sa}
+HHH10001003: Autocommit mode: false
+HHH10001115: Connection pool size: 1 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48eaf42f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@a6e4897] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+HHH000412: Hibernate ORM core version 6.1.7.Final
+HHH10001002: Using built-in connection pool (not intended for production use)
+HHH10001005: Loaded JDBC driver class: org.h2.Driver
+HHH10001012: Connecting with JDBC URL [jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false]
+HHH10001001: Connection properties: {password=****, user=sa}
+HHH10001003: Autocommit mode: false
+HHH10001115: Connection pool size: 1 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48eaf42f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@a6e4897] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
