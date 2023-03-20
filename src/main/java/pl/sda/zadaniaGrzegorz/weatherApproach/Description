@@ -1,0 +1,75 @@
+Slajd 3: Cykl życia oprogramowania
+z ang. SLDC
+1. Planowanie
+ - CZY będziemy coś robić - analiza biznesowa, finansowa,
+  określenie ryzyka, potencjalnych zysków / strat
+2. Analiza
+ - co chcemy uzyskać, ewentualnie w jakim kierunku podążać,
+ bo:
+    - w podejściu "Waterfall" najpierw określa się
+    maksymalną ilość wymagań w sosunku do aplikacji
+    i dopiero przechodzi dalej do projektowania
+    - w podejściach "zwinnych" - Agile, Scrum, Kanban, XP
+    określamy kierunek w jakim idziemy i szczegółowo
+    opisujemy tylko wybrane kawałki aplikacji, najlepiej
+    tworzące jakąś całość pod względem biznesowym
+    (np, aplikacja mobilna do banku będzie pokazywać historię
+    konta i na początek nic więcej)
+ - jakieś ramy czasowe i ilości zaangażowanych osób - w obu
+ powyższych podejsciach, bo to pozwala zaplanować budżet i
+ np. powierzchnię biurową dla zespołu
+3. Projektowanie
+ - planowanie struktury aplikacji i danych
+  - z jakiego języka będziemy korzystać
+  - jakie frameworki
+  - jakie bazy danych
+  - gdzie będzie nasza apka udostępniana : chmura / serwer własny
+  - jak będziemy tą aplikację budować i dostarczać - czyli jakie
+    narzędzia CI/CD (Continous Integration / Continous Deployment)
+  - jak projektujemy aplikację (MVC, DDD?, BDD, ...) -
+    podział na strukturę, klasy, nazewnictwo (Controller, Service,
+    Repository, Entity, DTO, ...)
+  - jak projektujemy bazę (bazy) danych
+  - jak realizujemy komunikację frontend - backend
+  - jak pracujemy z git'em
+  - reguły przeglądu kodu
+4. Implementacja
+ - pisanie kodu
+ - pisanie testów - jednostkowych, integracyjnych, end-to-end
+ - wrzucanie do GITa
+5. Testowanie i integracja
+ - testowanie
+  - testy manualne wykonywane przez zespół testerski
+  - testowanie automatyczne narzędziami typu Cypress, Selenium, ...
+  - testy manualne wykonywane przez klienta
+ - integracja
+  - wprowadzenie nowych zmian na kolejne środowiska - testowe
+    dla naszych testerów, testowe dla klienta, produkcyjne
+6. Utrzymanie
+ - poprawa błędów zgłoszonych przez klienta znalezionych w aplikacji
+ - nadzór nad techniczną stroną rozwiązania - opieka nad serwerami -
+   czyli sprawdzanie wydajności, wykonywanie update'ów oprogramowania
+ - dopisywanie nowych funkcjonalności zamówionych przez klienta
+   albo wymuszanych np. przez zmianę prawa
+
+Slajd 12 i dalej: praca z GIT'em
+ 1. Można pracować tylko z branchem master (albo main)
+    i commitować bezpośrednio zmiany na nim
+ 2. Można pracować z brachem master (main) i branchami
+    roboczymi które tworzymy z mastera (maina) i po
+    wykonaniu zmian robimy powrotne merge do mastera (maina)
+ 3. Można pracować z branchami np. master, test, develop
+    gdzie :
+     - branch develop jest do codziennej pracy
+     - programiści tworzą swoje branche robocze z develop'a
+       i po naniesieniu zmian merge'ują spowrotem do mastera
+     - branch test co jakiś czas jest aktualizowany
+       zawartością brancha develop - czyli merge develop -> test
+       i na tym branchu testują testerzy
+     - branch master jest co jakiś czas aktualizowany z testa
+       i na tym branchu testuje klient i z tego brancha
+       wykonujemy aktualizację środowiska produkcyjnego
+ 4. Definiujemy reguły przeglądu kodu - tak żeby jednak na
+    zmiany spojrzał ktoś jeszcze zanim trafią na branche master
+     / develop - zależnie od wybranego podejścia
+
